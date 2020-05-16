@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-Ninja Fighter
+ShopStop
 </h1>
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="./shopstop-frontend/assets/icon.png" alt="ShopStop" width="200"></a>
