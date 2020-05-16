@@ -22,6 +22,10 @@ ShopStop is a mobile application to make organizing shopping easier!
 
 # Getting started
 
+**This project was made on gitlab, so the CI in gitlab.yml and deployment features are not working.**
+
+**Our API endpoint shopstop.xyz is also taken down, which means the playstore .apk is not working either.**
+
 Our application is divided into two main parts, a React Native frontend and a Django backend.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -58,8 +62,6 @@ $ python manage.py runserver IPADDRESS:8000
 Where `IPADDRESS` is the IPv4 address of your machine.
 
 :warning: You need to manually change `ENV.dev.apiUrl` in **67/shopstop-frontend/environment.js** to `IPADDRESS:8000`. :warning:
-
-If you have trouble setting up the backend locally, you can change `ENV.dev.apiUrl` in **67/shopstop-frontend/environment.js** to `https://staging.shopstop.xyz/` though this is not recommended.
 
 ### Setting up Frontend
 
@@ -120,7 +122,7 @@ $ coverage run --source="shopstop" manage.py test
 $ coverage report
 ```
 
-# Deployment
+# Deployment (Not on github)
 
 This project utilizes the continuous deployment features of gitlab.
 
@@ -131,10 +133,10 @@ The frontend must be distributed manually. By using [expo publish](https://docs.
 
 # License
 
-This project is distributed under the [MIT license](LICENSE)
+This project is distributed under the [MIT license](LICENSE.md)
 
 # Links
 
-- [Wiki](https://gitlab.stud.idi.ntnu.no/tdt4140-2020/67/-/wikis/home)
-- [Download](https://play.google.com/store/apps/details?id=shopstop.xyz) on Google Play Store
+- [Wiki](https://gitlab.stud.idi.ntnu.no/tdt4140-2020/67/-/wikis/home) (Gitlab link which requires permission)
+- [Download](https://play.google.com/store/apps/details?id=shopstop.xyz) on Google Play Store (no longer works)
 - [Backend API documentation](shopstop_backend#shopstop-backend-api)
